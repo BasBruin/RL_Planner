@@ -177,7 +177,7 @@
             this.ApplyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ApplyLabel.Name = "ApplyLabel";
             this.ApplyLabel.Size = new System.Drawing.Size(79, 35);
-            this.ApplyLabel.TabIndex = 12;
+            this.ApplyLabel.TabIndex = 8;
             this.ApplyLabel.Tag = "";
             this.ApplyLabel.Text = "Apply";
             this.ApplyLabel.Click += new System.EventHandler(this.ApplyLabel_Click);
@@ -188,7 +188,7 @@
             this.txtBoxNaam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBoxNaam.Name = "txtBoxNaam";
             this.txtBoxNaam.Size = new System.Drawing.Size(177, 27);
-            this.txtBoxNaam.TabIndex = 13;
+            this.txtBoxNaam.TabIndex = 1;
             this.txtBoxNaam.Tag = "ChangeProfile";
             // 
             // label4
@@ -219,7 +219,7 @@
             this.txtBoxGameUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBoxGameUsername.Name = "txtBoxGameUsername";
             this.txtBoxGameUsername.Size = new System.Drawing.Size(176, 27);
-            this.txtBoxGameUsername.TabIndex = 15;
+            this.txtBoxGameUsername.TabIndex = 2;
             this.txtBoxGameUsername.Tag = "ChangeProfile";
             // 
             // label6
@@ -238,42 +238,97 @@
             this.cBox1s.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox1s.FormattingEnabled = true;
             this.cBox1s.Items.AddRange(new object[] {
-            "Bronze I Div I",
-            "Bronze I Div II",
-            "Bronze I Div III",
-            "Bronze I Div IV",
-            "Bronze II Div I",
-            "Bronze II Div II",
-            "Bronze II Div III",
-            "Bronze II Div IV",
-            "Bronze III Div I",
-            "Bronze III Div II",
-            "Bronze III Div I",
-            "Bronze III Div I",
-            "Silver I",
-            "Silver II",
-            "Silver III",
-            "Gold I",
-            "Gold II",
-            "Gold III",
-            "Platinum I",
-            "Platinum II",
-            "Platinum III",
-            "Diamond I",
-            "Diamond II",
-            "Diamond III",
-            "Champion I",
-            "Champion II",
-            "Champion III",
-            "Grand Champion I",
-            "Grand Champion II",
-            "Grand Champion III",
-            "Supersonic Legend"});
+            "Unranked",
+            "Bronze I\r Div I",
+            "Bronze I\r Div II",
+            "Bronze I\r Div III",
+            "Bronze I\r Div IV",
+            "Bronze II\r Div I",
+            "Bronze II\r Div II",
+            "Bronze II\r Div III",
+            "Bronze II\r Div IV",
+            "Bronze III\r Div I",
+            "Bronze III\r Div II",
+            "Bronze III\r Div III",
+            "Bronze III\r Div IV",
+            "Silver I\r Div I",
+            "Silver I\r Div II",
+            "Silver I\r Div III",
+            "Silver I\r Div IV",
+            "Silver II\r Div I",
+            "Silver II\r Div II",
+            "Silver II\r Div III",
+            "Silver II\r Div IV",
+            "Silver III\r Div I",
+            "Silver III\r Div II",
+            "Silver III\r Div III",
+            "Silver III\r Div IV",
+            "Gold I\r Div I",
+            "Gold I\r Div II",
+            "Gold I\r Div III",
+            "Gold I\r Div IV",
+            "Gold II\r Div I",
+            "Gold II\r Div II",
+            "Gold II\r Div III",
+            "Gold II\r Div IV",
+            "Gold III\r Div I",
+            "Gold III\r Div II",
+            "Gold III\r Div III",
+            "Gold III\r Div IV",
+            "Platinum I\r Div I",
+            "Platinum I\r Div II",
+            "Platinum I\r Div III",
+            "Platinum I\r Div IV",
+            "Platinum II\r Div I",
+            "Platinum II\r Div II",
+            "Platinum II\r Div III",
+            "Platinum II\r Div IV",
+            "Platinum III\r Div I",
+            "Platinum III\r Div II",
+            "Platinum III\r Div III",
+            "Platinum III\r Div IV",
+            "Diamond I\r Div I",
+            "Diamond I\r Div II",
+            "Diamond I\r Div III",
+            "Diamond I\r Div IV",
+            "Diamond II\r Div I",
+            "Diamond II\r Div II",
+            "Diamond II\r Div III",
+            "Diamond II\r Div IV",
+            "Diamond III\r Div I",
+            "Diamond III\r Div II",
+            "Diamond III\r Div III",
+            "Diamond III\r Div IV",
+            "Champion I\r Div I",
+            "Champion I\r Div II",
+            "Champion I\r Div III",
+            "Champion I\r Div IV",
+            "Champion II\r Div I",
+            "Champion II\r Div II",
+            "Champion II\r Div III",
+            "Champion II\r Div IV",
+            "Champion III\r Div I",
+            "Champion III\r Div II",
+            "Champion III\r Div III",
+            "Champion III\r Div IV",
+            "Grand Champion I\r Div I",
+            "Grand Champion I\r Div II",
+            "Grand Champion I\r Div III",
+            "Grand Champion I\r Div IV",
+            "Grand Champion II\r Div I",
+            "Grand Champion II\r Div II",
+            "Grand Champion II\r Div III",
+            "Grand Champion II\r Div IV",
+            "Grand Champion III Div I",
+            "Grand Champion III Div II",
+            "Grand Champion III Div III",
+            "Grand Champion III Div IV",
+            "SuperSonic Legend"});
             this.cBox1s.Location = new System.Drawing.Point(291, 495);
             this.cBox1s.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBox1s.Name = "cBox1s";
             this.cBox1s.Size = new System.Drawing.Size(154, 28);
-            this.cBox1s.TabIndex = 19;
+            this.cBox1s.TabIndex = 3;
             this.cBox1s.Tag = "ChangeProfile";
             // 
             // txtBoxAppUsername
@@ -282,7 +337,7 @@
             this.txtBoxAppUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBoxAppUsername.Name = "txtBoxAppUsername";
             this.txtBoxAppUsername.Size = new System.Drawing.Size(224, 27);
-            this.txtBoxAppUsername.TabIndex = 20;
+            this.txtBoxAppUsername.TabIndex = 6;
             this.txtBoxAppUsername.Tag = "ChangeProfile";
             // 
             // label7
@@ -313,7 +368,7 @@
             this.txtboxEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtboxEmail.Name = "txtboxEmail";
             this.txtboxEmail.Size = new System.Drawing.Size(224, 27);
-            this.txtboxEmail.TabIndex = 22;
+            this.txtboxEmail.TabIndex = 7;
             this.txtboxEmail.Tag = "ChangeProfile";
             // 
             // imBox_AddPicture
@@ -328,6 +383,8 @@
             this.imBox_AddPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imBox_AddPicture.TabIndex = 24;
             this.imBox_AddPicture.TabStop = false;
+            this.imBox_AddPicture.Tag = "ChangeProfile";
+            this.imBox_AddPicture.Click += new System.EventHandler(this.imBox_AddPicture_Click);
             // 
             // ApplyPanel
             // 
@@ -440,33 +497,97 @@
             this.cBox2s.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox2s.FormattingEnabled = true;
             this.cBox2s.Items.AddRange(new object[] {
-            "Bronze I",
-            "Bronze II",
-            "Bronze III",
-            "Silver I",
-            "Silver II",
-            "Silver III",
-            "Gold I",
-            "Gold II",
-            "Gold III",
-            "Platinum I",
-            "Platinum II",
-            "Platinum III",
-            "Diamond I",
-            "Diamond II",
-            "Diamond III",
-            "Champion I",
-            "Champion II",
-            "Champion III",
-            "Grand Champion I",
-            "Grand Champion II",
-            "Grand Champion III",
-            "Supersonic Legend"});
+            "Unranked",
+            "Bronze I\r Div I",
+            "Bronze I\r Div II",
+            "Bronze I\r Div III",
+            "Bronze I\r Div IV",
+            "Bronze II\r Div I",
+            "Bronze II\r Div II",
+            "Bronze II\r Div III",
+            "Bronze II\r Div IV",
+            "Bronze III\r Div I",
+            "Bronze III\r Div II",
+            "Bronze III\r Div III",
+            "Bronze III\r Div IV",
+            "Silver I\r Div I",
+            "Silver I\r Div II",
+            "Silver I\r Div III",
+            "Silver I\r Div IV",
+            "Silver II\r Div I",
+            "Silver II\r Div II",
+            "Silver II\r Div III",
+            "Silver II\r Div IV",
+            "Silver III\r Div I",
+            "Silver III\r Div II",
+            "Silver III\r Div III",
+            "Silver III\r Div IV",
+            "Gold I\r Div I",
+            "Gold I\r Div II",
+            "Gold I\r Div III",
+            "Gold I\r Div IV",
+            "Gold II\r Div I",
+            "Gold II\r Div II",
+            "Gold II\r Div III",
+            "Gold II\r Div IV",
+            "Gold III\r Div I",
+            "Gold III\r Div II",
+            "Gold III\r Div III",
+            "Gold III\r Div IV",
+            "Platinum I\r Div I",
+            "Platinum I\r Div II",
+            "Platinum I\r Div III",
+            "Platinum I\r Div IV",
+            "Platinum II\r Div I",
+            "Platinum II\r Div II",
+            "Platinum II\r Div III",
+            "Platinum II\r Div IV",
+            "Platinum III\r Div I",
+            "Platinum III\r Div II",
+            "Platinum III\r Div III",
+            "Platinum III\r Div IV",
+            "Diamond I\r Div I",
+            "Diamond I\r Div II",
+            "Diamond I\r Div III",
+            "Diamond I\r Div IV",
+            "Diamond II\r Div I",
+            "Diamond II\r Div II",
+            "Diamond II\r Div III",
+            "Diamond II\r Div IV",
+            "Diamond III\r Div I",
+            "Diamond III\r Div II",
+            "Diamond III\r Div III",
+            "Diamond III\r Div IV",
+            "Champion I\r Div I",
+            "Champion I\r Div II",
+            "Champion I\r Div III",
+            "Champion I\r Div IV",
+            "Champion II\r Div I",
+            "Champion II\r Div II",
+            "Champion II\r Div III",
+            "Champion II\r Div IV",
+            "Champion III\r Div I",
+            "Champion III\r Div II",
+            "Champion III\r Div III",
+            "Champion III\r Div IV",
+            "Grand Champion I\r Div I",
+            "Grand Champion I\r Div II",
+            "Grand Champion I\r Div III",
+            "Grand Champion I\r Div IV",
+            "Grand Champion II\r Div I",
+            "Grand Champion II\r Div II",
+            "Grand Champion II\r Div III",
+            "Grand Champion II\r Div IV",
+            "Grand Champion III Div I",
+            "Grand Champion III Div II",
+            "Grand Champion III Div III",
+            "Grand Champion III Div IV",
+            "SuperSonic Legend"});
             this.cBox2s.Location = new System.Drawing.Point(291, 568);
             this.cBox2s.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBox2s.Name = "cBox2s";
             this.cBox2s.Size = new System.Drawing.Size(154, 28);
-            this.cBox2s.TabIndex = 29;
+            this.cBox2s.TabIndex = 4;
             this.cBox2s.Tag = "ChangeProfile";
             // 
             // cBox3s
@@ -474,33 +595,97 @@
             this.cBox3s.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox3s.FormattingEnabled = true;
             this.cBox3s.Items.AddRange(new object[] {
-            "Bronze I",
-            "Bronze II",
-            "Bronze III",
-            "Silver I",
-            "Silver II",
-            "Silver III",
-            "Gold I",
-            "Gold II",
-            "Gold III",
-            "Platinum I",
-            "Platinum II",
-            "Platinum III",
-            "Diamond I",
-            "Diamond II",
-            "Diamond III",
-            "Champion I",
-            "Champion II",
-            "Champion III",
-            "Grand Champion I",
-            "Grand Champion II",
-            "Grand Champion III",
-            "Supersonic Legend"});
+            "Unranked",
+            "Bronze I\r Div I",
+            "Bronze I\r Div II",
+            "Bronze I\r Div III",
+            "Bronze I\r Div IV",
+            "Bronze II\r Div I",
+            "Bronze II\r Div II",
+            "Bronze II\r Div III",
+            "Bronze II\r Div IV",
+            "Bronze III\r Div I",
+            "Bronze III\r Div II",
+            "Bronze III\r Div III",
+            "Bronze III\r Div IV",
+            "Silver I\r Div I",
+            "Silver I\r Div II",
+            "Silver I\r Div III",
+            "Silver I\r Div IV",
+            "Silver II\r Div I",
+            "Silver II\r Div II",
+            "Silver II\r Div III",
+            "Silver II\r Div IV",
+            "Silver III\r Div I",
+            "Silver III\r Div II",
+            "Silver III\r Div III",
+            "Silver III\r Div IV",
+            "Gold I\r Div I",
+            "Gold I\r Div II",
+            "Gold I\r Div III",
+            "Gold I\r Div IV",
+            "Gold II\r Div I",
+            "Gold II\r Div II",
+            "Gold II\r Div III",
+            "Gold II\r Div IV",
+            "Gold III\r Div I",
+            "Gold III\r Div II",
+            "Gold III\r Div III",
+            "Gold III\r Div IV",
+            "Platinum I\r Div I",
+            "Platinum I\r Div II",
+            "Platinum I\r Div III",
+            "Platinum I\r Div IV",
+            "Platinum II\r Div I",
+            "Platinum II\r Div II",
+            "Platinum II\r Div III",
+            "Platinum II\r Div IV",
+            "Platinum III\r Div I",
+            "Platinum III\r Div II",
+            "Platinum III\r Div III",
+            "Platinum III\r Div IV",
+            "Diamond I\r Div I",
+            "Diamond I\r Div II",
+            "Diamond I\r Div III",
+            "Diamond I\r Div IV",
+            "Diamond II\r Div I",
+            "Diamond II\r Div II",
+            "Diamond II\r Div III",
+            "Diamond II\r Div IV",
+            "Diamond III\r Div I",
+            "Diamond III\r Div II",
+            "Diamond III\r Div III",
+            "Diamond III\r Div IV",
+            "Champion I\r Div I",
+            "Champion I\r Div II",
+            "Champion I\r Div III",
+            "Champion I\r Div IV",
+            "Champion II\r Div I",
+            "Champion II\r Div II",
+            "Champion II\r Div III",
+            "Champion II\r Div IV",
+            "Champion III\r Div I",
+            "Champion III\r Div II",
+            "Champion III\r Div III",
+            "Champion III\r Div IV",
+            "Grand Champion I\r Div I",
+            "Grand Champion I\r Div II",
+            "Grand Champion I\r Div III",
+            "Grand Champion I\r Div IV",
+            "Grand Champion II\r Div I",
+            "Grand Champion II\r Div II",
+            "Grand Champion II\r Div III",
+            "Grand Champion II\r Div IV",
+            "Grand Champion III Div I",
+            "Grand Champion III Div II",
+            "Grand Champion III Div III",
+            "Grand Champion III Div IV",
+            "SuperSonic Legend"});
             this.cBox3s.Location = new System.Drawing.Point(291, 630);
             this.cBox3s.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBox3s.Name = "cBox3s";
             this.cBox3s.Size = new System.Drawing.Size(154, 28);
-            this.cBox3s.TabIndex = 30;
+            this.cBox3s.TabIndex = 5;
             this.cBox3s.Tag = "ChangeProfile";
             // 
             // ChangeProfileLabel
