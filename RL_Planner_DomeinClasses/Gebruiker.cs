@@ -1,4 +1,4 @@
-﻿namespace RL_Planner_DomeinClasses
+﻿namespace RL_Planner
 {
     public class Gebruiker
     {

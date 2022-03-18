@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace RL_Planner_DomeinClasses
+namespace RL_Planner
 {
     public class SQL_Connection
     {

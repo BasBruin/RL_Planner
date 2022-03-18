@@ -1,6 +1,6 @@
-﻿namespace Rl_Planner
+﻿namespace RL_Planner
 {
-    partial class Profiel
+    partial class Profiel : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -104,7 +104,7 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(119, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -143,6 +143,7 @@
             this.TeamsLabel.Size = new System.Drawing.Size(156, 35);
             this.TeamsLabel.TabIndex = 7;
             this.TeamsLabel.Text = "Mijn Team(s)";
+            this.TeamsLabel.Click += new System.EventHandler(this.TeamsLabel_Click);
             // 
             // ProfielLabel
             // 
@@ -415,7 +416,7 @@
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(147, 153);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
