@@ -149,6 +149,7 @@
             // 
             this.ProfielLabel.AutoSize = true;
             this.ProfielLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProfielLabel.Enabled = false;
             this.ProfielLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ProfielLabel.Location = new System.Drawing.Point(941, 54);
             this.ProfielLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

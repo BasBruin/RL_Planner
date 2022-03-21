@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using RL_Planner_DomeinClasses;
 
 namespace RL_Planner
 {
@@ -88,7 +89,7 @@ namespace RL_Planner
 
         private void TeamsLabel_Click(object sender, EventArgs e)
         {
-            FormCommunicator.Team.Show();
+            FormCommunicator.TeamLijst.Show();
             this.Hide();
         }
     }
