@@ -16,12 +16,12 @@ namespace RL_Planner
     {
         SQL_Connection GetDataBase = new SQL_Connection();
         SqlDataReader reader;
-        string ?path;
+        string? path;
 
         public Profiel()
         {
             InitializeComponent();
-            
+
             reader = GetDataBase.loadSQL("SELECT * FROM Gebruiker WHERE ID = 1");
             reader.Read();
             txtBoxGameUsername.Text = reader.GetString(4);
@@ -39,12 +39,12 @@ namespace RL_Planner
 
         private void ApplyLabel_Click(object sender, EventArgs e)
         {
-            if(txtBoxNaam.Text != "" && txtBoxAppUsername.Text != "" && txtBoxGameUsername.Text != "")
+            if (txtBoxNaam.Text != "" && txtBoxAppUsername.Text != "" && txtBoxGameUsername.Text != "")
             {
-                Gebruiker gebruiker = new Gebruiker(txtBoxNaam.Text, txtBoxGameUsername.Text, txtBoxAppUsername.Text, txtboxEmail.Text, cBox1s.Text, cBox2s.Text, cBox3s.Text);
+                Gebruiker gebruiker = new Gebruiker(1, txtBoxNaam.Text, txtBoxGameUsername.Text, txtBoxAppUsername.Text, txtboxEmail.Text, cBox1s.Text, cBox2s.Text, cBox3s.Text);
                 lblProfielNaam.Text = gebruiker.ToString();
 
-                GetDataBase.loadSQL("UPDATE Gebruiker SET Naam = '" + txtBoxNaam.Text + "', UserName ='" + txtBoxAppUsername.Text + "', GameNaam ='" + txtBoxGameUsername.Text + "', Email ='" + txtboxEmail.Text + "',Plaatje = '"+ path +"', Rank1s ='" + cBox1s.Text + "', Rank2s ='" + cBox2s.Text + "', Rank3s ='" + cBox3s.Text + "' WHERE ID = 1");
+                GetDataBase.loadSQL("UPDATE Gebruiker SET Naam = '" + txtBoxNaam.Text + "', UserName ='" + txtBoxAppUsername.Text + "', GameNaam ='" + txtBoxGameUsername.Text + "', Email ='" + txtboxEmail.Text + "',Plaatje = '" + path + "', Rank1s ='" + cBox1s.Text + "', Rank2s ='" + cBox2s.Text + "', Rank3s ='" + cBox3s.Text + "' WHERE ID = 1");
                 ChangeProfileLabel.Visible = true;
                 ChangeProfilePanel.Visible = true;
                 ApplyLabel.Visible = false;
@@ -52,7 +52,7 @@ namespace RL_Planner
 
                 foreach (Control c in Controls)
                 {
-                    if(c.Tag == "ChangeProfile")
+                    if (c.Tag == "ChangeProfile")
                     {
                         c.Enabled = false;
                     }

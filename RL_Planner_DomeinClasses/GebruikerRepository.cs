@@ -7,13 +7,14 @@ using System.Data.SqlClient;
 
 namespace RL_Planner_DomeinClasses
 {
-    public class SQL_Connection
+    public class GebruikerRepository
     {
         string connString = "Data Source=mssqlstud.fhict.local;Initial Catalog=dbi487790;Persist Security Info=True;User ID=dbi487790;Password=Welkom12";
 
-
-        public SqlDataReader loadSQL(string query)
+        // Dit is voor mensen toevoegen aan team.
+        public SqlDataReader GetAllGebruikers()
         {
+            string query = "SELECT UserName FROM Gebruiker";
             SqlConnection databaseConnection = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand(query, databaseConnection);
             cmd.CommandTimeout = 60;

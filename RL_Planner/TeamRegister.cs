@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using RL_Planner_DomeinClasses;
 
 namespace RL_Planner
 {
@@ -15,6 +16,8 @@ namespace RL_Planner
     {
         SQL_Connection GetDataBase = new SQL_Connection();
         SqlDataReader reader;
+        string? path;
+        GebruikerRepository GebruikerRepository = new();
 
         public TeamRegister()
         {
@@ -23,9 +26,46 @@ namespace RL_Planner
             reader.Read();
             Bitmap bitmap = new Bitmap(reader.GetString(6)); ;
             pictureBox1.Image = bitmap;
+
+            reader = GebruikerRepository.GetAllGebruikers();
+            while (reader.Read())
+            {
+                cBoxLeden.Items.Add(reader.GetString(0));
+            }
         }
 
         private void ProfielLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imBox_AddPicture_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opnfd = new OpenFileDialog();
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            if (opnfd.ShowDialog() == DialogResult.OK)
+            {
+                picboxTeamPlaatje.Image = new Bitmap(opnfd.FileName);
+                path = opnfd.FileName;
+            }
+        }
+
+        private void btnVoegToe_Click(object sender, EventArgs e)
+        {
+            if(cBoxLeden.Text != "")
+            {
+                lBoxTeamLeden.Items.Add(cBoxLeden.Text);
+                cBoxLeden.Items.Remove(cBoxLeden.SelectedItem);
+            }
+        }
+
+        private void btnVerwijder_Click(object sender, EventArgs e)
+        {
+            cBoxLeden.Items.Add(lBoxTeamLeden.Text);
+            lBoxTeamLeden.Items.Remove(lBoxTeamLeden.SelectedItem.ToString());
+        }
+
+        private void OpslaanLabel_Click(object sender, EventArgs e)
         {
 
         }

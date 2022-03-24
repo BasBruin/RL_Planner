@@ -8,6 +8,7 @@ namespace RL_Planner_DomeinClasses
 {
     public class Gebruiker
     {
+        private int ID;
         private string Naam;
         private string GameNaam;
         private string PlannerNaam;
@@ -16,16 +17,17 @@ namespace RL_Planner_DomeinClasses
         private string Rank2s;
         private string Rank3s;
 
-        public Gebruiker(string naam, string gameNaam, string plannerNaam, string email,
+        public Gebruiker(int ID, string naam, string gameNaam, string plannerNaam, string email,
             string rank1s, string rank2s, string rank3s)
         {
-            Naam = naam;
-            GameNaam = gameNaam;
-            PlannerNaam = plannerNaam;
-            Email = email;
-            Rank1s = rank1s;
-            Rank2s = rank2s;
-            Rank3s = rank3s;
+            this.ID = ID;
+            this.Naam = naam;
+            this.GameNaam = gameNaam;
+            this.PlannerNaam = plannerNaam;
+            this.Email = email;
+            this.Rank1s = rank1s;
+            this.Rank2s = rank2s;
+            this.Rank3s = rank3s;
         }
 
         public override string ToString()

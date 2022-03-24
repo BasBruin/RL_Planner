@@ -44,14 +44,15 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cBoxLeden = new System.Windows.Forms.ComboBox();
+            this.lBoxTeamLeden = new System.Windows.Forms.ListBox();
+            this.btnVerwijder = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.LogOutLabel = new System.Windows.Forms.Label();
+            this.OpslaanLabel = new System.Windows.Forms.Label();
             this.LogOutPanel = new System.Windows.Forms.PictureBox();
             this.imBox_AddPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picboxTeamPlaatje = new System.Windows.Forms.PictureBox();
+            this.btnVoegToe = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeamsPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KalenderPanel)).BeginInit();
@@ -60,7 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.HomePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imBox_AddPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxTeamPlaatje)).BeginInit();
             this.SuspendLayout();
             // 
             // ProfielLabel
@@ -227,52 +228,55 @@
             this.label3.TabIndex = 31;
             this.label3.Text = "Voeg Leden Toe:";
             // 
-            // comboBox1
+            // cBoxLeden
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(407, 240);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 32;
+            this.cBoxLeden.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBoxLeden.FormattingEnabled = true;
+            this.cBoxLeden.Location = new System.Drawing.Point(407, 240);
+            this.cBoxLeden.Name = "cBoxLeden";
+            this.cBoxLeden.Size = new System.Drawing.Size(151, 28);
+            this.cBoxLeden.TabIndex = 32;
             // 
-            // listBox1
+            // lBoxTeamLeden
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(381, 315);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(212, 204);
-            this.listBox1.TabIndex = 33;
+            this.lBoxTeamLeden.FormattingEnabled = true;
+            this.lBoxTeamLeden.ItemHeight = 20;
+            this.lBoxTeamLeden.Location = new System.Drawing.Point(381, 315);
+            this.lBoxTeamLeden.Name = "lBoxTeamLeden";
+            this.lBoxTeamLeden.Size = new System.Drawing.Size(212, 204);
+            this.lBoxTeamLeden.TabIndex = 33;
             // 
-            // button1
+            // btnVerwijder
             // 
-            this.button1.Location = new System.Drawing.Point(380, 535);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 50);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Verwijder Geselecteerde Persoon";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVerwijder.Location = new System.Drawing.Point(380, 535);
+            this.btnVerwijder.Name = "btnVerwijder";
+            this.btnVerwijder.Size = new System.Drawing.Size(106, 50);
+            this.btnVerwijder.TabIndex = 34;
+            this.btnVerwijder.Text = "Verwijder Persoon";
+            this.btnVerwijder.UseVisualStyleBackColor = true;
+            this.btnVerwijder.Click += new System.EventHandler(this.btnVerwijder_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(803, 216);
+            this.label4.Location = new System.Drawing.Point(803, 225);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.Size = new System.Drawing.Size(97, 20);
             this.label4.TabIndex = 36;
-            this.label4.Text = "label4";
+            this.label4.Text = "Team Plaatje:";
             // 
-            // LogOutLabel
+            // OpslaanLabel
             // 
-            this.LogOutLabel.AutoSize = true;
-            this.LogOutLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogOutLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LogOutLabel.Location = new System.Drawing.Point(969, 620);
-            this.LogOutLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LogOutLabel.Name = "LogOutLabel";
-            this.LogOutLabel.Size = new System.Drawing.Size(106, 35);
-            this.LogOutLabel.TabIndex = 39;
-            this.LogOutLabel.Text = "Opslaan";
+            this.OpslaanLabel.AutoSize = true;
+            this.OpslaanLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OpslaanLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpslaanLabel.Location = new System.Drawing.Point(969, 620);
+            this.OpslaanLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.OpslaanLabel.Name = "OpslaanLabel";
+            this.OpslaanLabel.Size = new System.Drawing.Size(106, 35);
+            this.OpslaanLabel.TabIndex = 39;
+            this.OpslaanLabel.Text = "Opslaan";
+            this.OpslaanLabel.Click += new System.EventHandler(this.OpslaanLabel_Click);
             // 
             // LogOutPanel
             // 
@@ -297,32 +301,44 @@
             this.imBox_AddPicture.TabIndex = 41;
             this.imBox_AddPicture.TabStop = false;
             this.imBox_AddPicture.Tag = "ChangeProfile";
+            this.imBox_AddPicture.Click += new System.EventHandler(this.imBox_AddPicture_Click);
             // 
-            // pictureBox2
+            // picboxTeamPlaatje
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::RL_Planner.Properties.Resources.ProfilePic;
-            this.pictureBox2.Location = new System.Drawing.Point(803, 271);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(272, 248);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
+            this.picboxTeamPlaatje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picboxTeamPlaatje.Image = global::RL_Planner.Properties.Resources.ProfilePic;
+            this.picboxTeamPlaatje.Location = new System.Drawing.Point(803, 271);
+            this.picboxTeamPlaatje.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picboxTeamPlaatje.Name = "picboxTeamPlaatje";
+            this.picboxTeamPlaatje.Size = new System.Drawing.Size(272, 248);
+            this.picboxTeamPlaatje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxTeamPlaatje.TabIndex = 40;
+            this.picboxTeamPlaatje.TabStop = false;
+            // 
+            // btnVoegToe
+            // 
+            this.btnVoegToe.Location = new System.Drawing.Point(487, 535);
+            this.btnVoegToe.Name = "btnVoegToe";
+            this.btnVoegToe.Size = new System.Drawing.Size(106, 50);
+            this.btnVoegToe.TabIndex = 42;
+            this.btnVoegToe.Text = "Voeg Persoon Toe";
+            this.btnVoegToe.UseVisualStyleBackColor = true;
+            this.btnVoegToe.Click += new System.EventHandler(this.btnVoegToe_Click);
             // 
             // TeamRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 681);
+            this.Controls.Add(this.btnVoegToe);
             this.Controls.Add(this.imBox_AddPicture);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.LogOutLabel);
+            this.Controls.Add(this.picboxTeamPlaatje);
+            this.Controls.Add(this.OpslaanLabel);
             this.Controls.Add(this.LogOutPanel);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnVerwijder);
+            this.Controls.Add(this.lBoxTeamLeden);
+            this.Controls.Add(this.cBoxLeden);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
@@ -348,7 +364,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.HomePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imBox_AddPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxTeamPlaatje)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,13 +388,14 @@
         private TextBox textBox2;
         private Label label2;
         private Label label3;
-        private ComboBox comboBox1;
-        private ListBox listBox1;
-        private Button button1;
+        private ComboBox cBoxLeden;
+        private ListBox lBoxTeamLeden;
+        private Button btnVerwijder;
         private Label label4;
-        private Label LogOutLabel;
+        private Label OpslaanLabel;
         private PictureBox LogOutPanel;
         private PictureBox imBox_AddPicture;
-        private PictureBox pictureBox2;
+        private PictureBox picboxTeamPlaatje;
+        private Button btnVoegToe;
     }
 }

@@ -11,5 +11,21 @@ namespace RL_Planner_DomeinClasses
         private int ID;
         private string Naam;
         private string Beschrijving;
+
+        public Team(int id, string naam, string beschrijving)
+        {
+            this.ID = id;
+            this.Naam = naam;
+            this.Beschrijving = beschrijving;
+        }
+        public void TeamAanmaken()
+        {
+
+        }
+
+        public override string? ToString()
+        {
+            return Naam;
+        }
     }
 }

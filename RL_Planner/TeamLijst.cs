@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RL_Planner_DomeinClasses;
 
 namespace RL_Planner
 {
@@ -15,6 +16,7 @@ namespace RL_Planner
     {
         SqlDataReader reader;
         SQL_Connection GetDataBase = new SQL_Connection();
+        TeamRepository teamRepository = new TeamRepository();
 
         public TeamLijst()
         {
@@ -24,6 +26,8 @@ namespace RL_Planner
             lblProfielNaam.Text = reader.GetString(1);
             Bitmap bitmap = new Bitmap(reader.GetString(6)); ;
             pictureBox1.Image = bitmap;
+            //listBox1.Items.Add(teamRepository.GetPlayerTeams().ToString());
+            listBox1.Items.AddRange(teamRepository.GetPlayerTeams().ToArray());
         }
 
         private void ProfielLabel_Click(object sender, EventArgs e)
