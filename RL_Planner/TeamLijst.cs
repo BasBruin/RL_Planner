@@ -15,7 +15,7 @@ namespace RL_Planner
     public partial class TeamLijst : Form
     {
         SqlDataReader reader;
-        SQL_Connection GetDataBase = new SQL_Connection();
+        readonly SQL_Connection GetDataBase = new SQL_Connection();
         TeamRepository teamRepository = new TeamRepository();
 
         public TeamLijst()

@@ -1,6 +1,6 @@
 ﻿namespace RL_Planner
 {
-    partial class TeamLijst
+    partial class TeamInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -39,10 +39,6 @@
             this.lblProfielNaam = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeamsPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KalenderPanel)).BeginInit();
@@ -55,25 +51,24 @@
             // 
             this.ProfielLabel.AutoSize = true;
             this.ProfielLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProfielLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ProfielLabel.Location = new System.Drawing.Point(941, 54);
+            this.ProfielLabel.Enabled = false;
+            this.ProfielLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ProfielLabel.Location = new System.Drawing.Point(942, 54);
             this.ProfielLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProfielLabel.Name = "ProfielLabel";
-            this.ProfielLabel.Size = new System.Drawing.Size(86, 35);
+            this.ProfielLabel.Size = new System.Drawing.Size(93, 35);
             this.ProfielLabel.TabIndex = 17;
             this.ProfielLabel.Text = "Profiel";
-            this.ProfielLabel.Click += new System.EventHandler(this.ProfielLabel_Click);
             // 
             // TeamsLabel
             // 
             this.TeamsLabel.AutoSize = true;
             this.TeamsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TeamsLabel.Enabled = false;
-            this.TeamsLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TeamsLabel.Location = new System.Drawing.Point(660, 54);
+            this.TeamsLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamsLabel.Location = new System.Drawing.Point(661, 54);
             this.TeamsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TeamsLabel.Name = "TeamsLabel";
-            this.TeamsLabel.Size = new System.Drawing.Size(167, 35);
+            this.TeamsLabel.Size = new System.Drawing.Size(156, 35);
             this.TeamsLabel.TabIndex = 16;
             this.TeamsLabel.Text = "Mijn Team(s)";
             // 
@@ -82,7 +77,7 @@
             this.KalenderLabel.AutoSize = true;
             this.KalenderLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KalenderLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.KalenderLabel.Location = new System.Drawing.Point(429, 54);
+            this.KalenderLabel.Location = new System.Drawing.Point(430, 54);
             this.KalenderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.KalenderLabel.Name = "KalenderLabel";
             this.KalenderLabel.Size = new System.Drawing.Size(113, 35);
@@ -94,7 +89,7 @@
             this.HomeLabel.AutoSize = true;
             this.HomeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomeLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HomeLabel.Location = new System.Drawing.Point(196, 54);
+            this.HomeLabel.Location = new System.Drawing.Point(197, 54);
             this.HomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HomeLabel.Name = "HomeLabel";
             this.HomeLabel.Size = new System.Drawing.Size(83, 35);
@@ -104,7 +99,7 @@
             // ProfilePanel
             // 
             this.ProfilePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProfilePanel.Location = new System.Drawing.Point(857, 0);
+            this.ProfilePanel.Location = new System.Drawing.Point(858, 0);
             this.ProfilePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProfilePanel.Name = "ProfilePanel";
             this.ProfilePanel.Size = new System.Drawing.Size(250, 137);
@@ -114,7 +109,7 @@
             // TeamsPanel
             // 
             this.TeamsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeamsPanel.Location = new System.Drawing.Point(611, 0);
+            this.TeamsPanel.Location = new System.Drawing.Point(612, 0);
             this.TeamsPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TeamsPanel.Name = "TeamsPanel";
             this.TeamsPanel.Size = new System.Drawing.Size(250, 137);
@@ -124,7 +119,7 @@
             // KalenderPanel
             // 
             this.KalenderPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KalenderPanel.Location = new System.Drawing.Point(365, 0);
+            this.KalenderPanel.Location = new System.Drawing.Point(366, 0);
             this.KalenderPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.KalenderPanel.Name = "KalenderPanel";
             this.KalenderPanel.Size = new System.Drawing.Size(250, 137);
@@ -136,7 +131,7 @@
             this.ProfilePicPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ProfilePicPanel.Controls.Add(this.lblProfielNaam);
             this.ProfilePicPanel.Controls.Add(this.pictureBox1);
-            this.ProfilePicPanel.Location = new System.Drawing.Point(0, 0);
+            this.ProfilePicPanel.Location = new System.Drawing.Point(1, 0);
             this.ProfilePicPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProfilePicPanel.Name = "ProfilePicPanel";
             this.ProfilePicPanel.Size = new System.Drawing.Size(119, 137);
@@ -145,12 +140,12 @@
             // lblProfielNaam
             // 
             this.lblProfielNaam.AutoSize = true;
-            this.lblProfielNaam.Location = new System.Drawing.Point(47, 108);
+            this.lblProfielNaam.Location = new System.Drawing.Point(13, 108);
             this.lblProfielNaam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProfielNaam.Name = "lblProfielNaam";
-            this.lblProfielNaam.Size = new System.Drawing.Size(18, 20);
+            this.lblProfielNaam.Size = new System.Drawing.Size(97, 20);
             this.lblProfielNaam.TabIndex = 6;
-            this.lblProfielNaam.Text = "V";
+            this.lblProfielNaam.Text = "Vul profiel in:";
             // 
             // pictureBox1
             // 
@@ -167,59 +162,18 @@
             // HomePanel
             // 
             this.HomePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HomePanel.Location = new System.Drawing.Point(119, 0);
+            this.HomePanel.Location = new System.Drawing.Point(120, 0);
             this.HomePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(250, 137);
             this.HomePanel.TabIndex = 9;
             this.HomePanel.TabStop = false;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(48, 246);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(238, 404);
-            this.listBox1.TabIndex = 18;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 182);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Jouw Teams:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(445, 360);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 20);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Maak hier je eigen team aan!";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(475, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 105);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Knop";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // TeamLijst
+            // TeamInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 681);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(1101, 735);
             this.Controls.Add(this.ProfielLabel);
             this.Controls.Add(this.TeamsLabel);
             this.Controls.Add(this.KalenderLabel);
@@ -229,8 +183,8 @@
             this.Controls.Add(this.KalenderPanel);
             this.Controls.Add(this.ProfilePicPanel);
             this.Controls.Add(this.HomePanel);
-            this.Name = "TeamLijst";
-            this.Text = "Team";
+            this.Name = "TeamInfo";
+            this.Text = "TeamInfo";
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TeamsPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KalenderPanel)).EndInit();
@@ -256,9 +210,5 @@
         private Label lblProfielNaam;
         private PictureBox pictureBox1;
         private PictureBox HomePanel;
-        private ListBox listBox1;
-        private Label label1;
-        private Label label2;
-        private Button button1;
     }
 }

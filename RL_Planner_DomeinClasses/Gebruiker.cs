@@ -8,7 +8,7 @@ namespace RL_Planner_DomeinClasses
 {
     public class Gebruiker
     {
-        private int ID;
+        public int ID;
         private string Naam;
         private string GameNaam;
         private string PlannerNaam;
@@ -32,7 +32,7 @@ namespace RL_Planner_DomeinClasses
 
         public override string ToString()
         {
-            return Naam;
+            return GameNaam;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace RL_Planner_DomeinClasses
         // Dit is voor mensen toevoegen aan team.
         public SqlDataReader GetAllGebruikers()
         {
-            string query = "SELECT UserName FROM Gebruiker";
+            string query = "SELECT * FROM Gebruiker WHERE ID != 1";
             SqlConnection databaseConnection = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand(query, databaseConnection);
             cmd.CommandTimeout = 60;

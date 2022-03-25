@@ -40,8 +40,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBoxNaam = new System.Windows.Forms.TextBox();
+            this.txtBoxBeschrijving = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cBoxLeden = new System.Windows.Forms.ComboBox();
@@ -195,20 +195,20 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Team Naam:";
             // 
-            // textBox1
+            // txtBoxNaam
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 240);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 27);
-            this.textBox1.TabIndex = 28;
+            this.txtBoxNaam.Location = new System.Drawing.Point(52, 240);
+            this.txtBoxNaam.Name = "txtBoxNaam";
+            this.txtBoxNaam.Size = new System.Drawing.Size(182, 27);
+            this.txtBoxNaam.TabIndex = 28;
             // 
-            // textBox2
+            // txtBoxBeschrijving
             // 
-            this.textBox2.Location = new System.Drawing.Point(52, 360);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 225);
-            this.textBox2.TabIndex = 29;
+            this.txtBoxBeschrijving.Location = new System.Drawing.Point(52, 360);
+            this.txtBoxBeschrijving.Multiline = true;
+            this.txtBoxBeschrijving.Name = "txtBoxBeschrijving";
+            this.txtBoxBeschrijving.Size = new System.Drawing.Size(227, 225);
+            this.txtBoxBeschrijving.TabIndex = 29;
             // 
             // label2
             // 
@@ -341,8 +341,8 @@
             this.Controls.Add(this.cBoxLeden);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxBeschrijving);
+            this.Controls.Add(this.txtBoxNaam);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ProfielLabel);
             this.Controls.Add(this.TeamsLabel);
@@ -384,8 +384,8 @@
         private PictureBox pictureBox1;
         private PictureBox HomePanel;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtBoxNaam;
+        private TextBox txtBoxBeschrijving;
         private Label label2;
         private Label label3;
         private ComboBox cBoxLeden;

@@ -20,7 +20,7 @@ namespace RL_Planner_DomeinClasses
 
             foreach (DataRow dr in dt.Rows)
             {
-                teams.Add(new Team(Convert.ToInt32(dr["ID"]),Convert.ToString(dr["Naam"]),Convert.ToString(dr["Beschrijving"])));
+                teams.Add(new Team(Convert.ToInt32(dr["ID"]), Convert.ToString(dr["Naam"]), Convert.ToString(dr["Beschrijving"])));
             }
             return teams;
         }
